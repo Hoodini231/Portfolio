@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white` }>Hi, I'm 
              <span className="text-[#915eff]"> Shaun</span>
           </h1>
-          <p classname={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a Full Stack Developer who loves to design 
             <br className="sm:block hidden" /> 
             backend processes with a diverse set of skills
@@ -24,6 +24,18 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{ y: [0, 24, 0] }}
+              transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
+              
+              className="w-3 h-3 bg-secondary rounded-full"
+            />
+          </div>
+        </a >
+      </div>
     </section>
   )
 }
