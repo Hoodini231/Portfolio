@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    aiSg1,
+    dataAnalyst,
+    sqlHR,
   } from "../assets";
   
   export const navLinks = [
@@ -58,6 +61,23 @@ import {
       icon: creator,
     },
   ];
+  const certificates = [
+    {
+      name: "Data Analyst Associate",
+      giver: "DataCamp",
+      icon: dataAnalyst,
+    }, 
+    {
+      name: "SQL (Advanced)",
+      giver: "HackerRank",
+      icon: sqlHR,
+    },
+    {
+      name: "AI Level 1",
+      giver: "AI Singaore",
+      icon: aiSg1,
+    }
+  ]
   
   const technologies = [
     {
@@ -81,10 +101,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -103,14 +119,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
@@ -228,11 +236,11 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -245,15 +253,15 @@ import {
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -262,4 +270,32 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+
+  const links = [
+    {
+      name: "Home",
+      hash: "home",
+    },
+    {
+      name: "About",
+      hash: "about",
+    },
+    {
+      name: "Projects",
+      hash: "projects",
+    },
+    {
+      name: "Skills",
+      hash: "skills",
+    },
+    {
+      name: "Experience",
+      hash: "experience",
+    },
+    {
+      name: "Contact",
+      hash: "contact",
+    },
+  ] 
+  
+  export { services, technologies, experiences, testimonials, projects, certificates };

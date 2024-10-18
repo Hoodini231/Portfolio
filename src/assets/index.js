@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import aiSg1 from "./aiSgLvl1.png";
+import dataAnalyst from "./dataAnalystAssociate.png";
+import sqlHR from "./sqlHackerRank.png";
+
 export {
   logo,
   backend,
@@ -59,4 +63,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  aiSg1,
+  dataAnalyst,
+  sqlHR,
 };
