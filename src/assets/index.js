@@ -25,6 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import nus from "./company/nus.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -66,4 +67,5 @@ export {
   aiSg1,
   dataAnalyst,
   sqlHR,
+  nus
 };

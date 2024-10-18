@@ -26,6 +26,7 @@ import {
     aiSg1,
     dataAnalyst,
     sqlHR,
+    nus
   } from "../assets";
   
   export const navLinks = [
@@ -124,55 +125,40 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "CS Teaching Assistant",
+      company_name: "National University of Singapore",
+      icon: nus,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Aug 2024 - Dec 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "CS1101S Programming Methodology",
+        "Conducting weekly 2 hour tutorials for a class of 8 students.",
+        "Maintain close mentoring relations to provide additional support to students.",
+        "Grading weekly coding assignments and providing constructive feedback to students.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Year 2 Computer Science Student",
+      company_name: "National University of Singapore",
+      icon: nus,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Aug 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "First Class Honours with 4.6 GPA",
+        "Computing RAG Project director, resulting in computing's best ever performance in 2024.",
+        "Key courses: CS2030S Programming Methodology 2, CS2040S Data Structures and Algorithms, CS2102 Database Systems, CS2103T Software Engineering.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "SJII Alumni",
+      company_name: "St Joseph's Institution International",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2015 - Jan 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Graduated with nominations for the Computing award and the Foo Chai Kai best scout award.",
+        "Vice-chairman and treasuerer of the school's scout group.",
+        "Wrote 4000 research paper on analysing heap data structures",
       ],
     },
   ];
@@ -206,9 +192,30 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Turtogotchi",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Awarded Runner's up to People Choice Award out of 150 teams at DSTA Brainhack. This project aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
+      tags: [
+        {
+          name: "flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "git",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carrent,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Big Heart Volunteering",
+      description:
+        "Web application that aims to revamp the volunteer experience in Singapore for NPO's by providing a platform for volunteers to find opportunities and feel welcomed and for NPO's to easily manage events and volunteers.",
       tags: [
         {
           name: "react",
@@ -219,15 +226,15 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "bootstrap",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: jobit,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Runner's High",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -240,7 +247,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "bootstrap",
           color: "pink-text-gradient",
         },
       ],
@@ -248,20 +255,62 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Train Management System",
+      description:
+        "Developed for managing train routes and booking train seats in real time. This project was inspired by my curosity in how bullet train system worked in Japan.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "sql",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tkinter",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "SAF Automation Script",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "selenium",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "twillio",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Forex Monitor App",
+      description:
+        "A desktop app which displays the current exchange rates of various currencies and shows the user if it has gone up or down via webscraping.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "beautifulsoup4",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tkinter",
           color: "pink-text-gradient",
         },
       ],
