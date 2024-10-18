@@ -1,0 +1,11 @@
+Model Information:
+* title:	FENDER STRATOCASTER
+* source:	https://sketchfab.com/3d-models/fender-stratocaster-1def235e1a5a4310936c7e36a42b316f
+* author:	drcrazzie (https://sketchfab.com/drcrazzie)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "FENDER STRATOCASTER" (https://sketchfab.com/3d-models/fender-stratocaster-1def235e1a5a4310936c7e36a42b316f) by drcrazzie (https://sketchfab.com/drcrazzie) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	[Fan artwork] W40k: Dreadnought Castraferrum
+* source:	https://sketchfab.com/3d-models/fan-artwork-w40k-dreadnought-castraferrum-472c9c0bdda7495d8243998421054a83
+* author:	R4zerw4rs (https://sketchfab.com/R4zerw4rs)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[Fan artwork] W40k: Dreadnought Castraferrum" (https://sketchfab.com/3d-models/fan-artwork-w40k-dreadnought-castraferrum-472c9c0bdda7495d8243998421054a83) by R4zerw4rs (https://sketchfab.com/R4zerw4rs) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

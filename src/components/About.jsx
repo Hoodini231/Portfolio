@@ -6,6 +6,7 @@ import { styles } from '../style';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { style } from 'framer-motion/client';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -27,6 +28,7 @@ const ServiceCard = ({ index, title, icon }) => {
     </Tilt >
   )
 }
+
 
 const About = () => {
   return (
