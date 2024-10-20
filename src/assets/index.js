@@ -20,20 +20,36 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.png";
+import firebase from "./tech/firebase.png";
+import java from "./tech/java.png";
+import sql from "./tech/sql.png";
+// import sql
+// import python
+// import java
+// import firebase
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import nus from "./company/nus.png";
+import sji from "./company/sji.png";
+import turtTech from "./company/turtTech.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import turtogotchi from "./turtogotchi2.png";
+import hack4good from "./hack4good.png";
+import TBS from "./TBS.png";
 
 import aiSg1 from "./aiSgLvl1.png";
 import dataAnalyst from "./dataAnalystAssociate.png";
 import sqlHR from "./sqlHackerRank.png";
+
+import run from "./runners.png";
+import script from "./script.png";
 
 export {
   logo,
@@ -67,5 +83,16 @@ export {
   aiSg1,
   dataAnalyst,
   sqlHR,
-  nus
+  nus,
+  sji,
+  turtTech,
+  turtogotchi,
+  hack4good,
+  TBS,
+  run,
+  script,
+  python,
+  firebase,
+  java,
+  sql
 };

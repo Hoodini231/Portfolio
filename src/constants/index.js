@@ -1,3 +1,4 @@
+import { t } from "maath/dist/misc-19a3ec46.esm";
 import {
     mobile,
     backend,
@@ -26,7 +27,19 @@ import {
     aiSg1,
     dataAnalyst,
     sqlHR,
-    nus
+    nus,
+    sji,
+    turtTech,
+    turtogotchi,
+    hack4good,
+    TBS,
+    run,
+    script,
+    firebase,
+    python,
+    java,
+    sql
+
   } from "../assets";
   
   export const navLinks = [
@@ -46,11 +59,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full-Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile Developer",
       icon: mobile,
     },
     {
@@ -58,7 +71,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Tech Entusiast",
       icon: creator,
     },
   ];
@@ -82,14 +95,6 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -102,10 +107,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
@@ -114,22 +115,47 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
+    {
+      name: "sql",
+      icon: sql
+    },
+    {
+      name: "python",
+      icon: python
+    }, 
+    {
+      name: "java",
+      icon: java
+    },
+    {
+      name: "firebase",
+      icon: firebase
+    }
   ];
   
   const experiences = [
+    {
+      title: "Co-Creator and Full Stack Developer",
+      company_name: "TurtTech",
+      icon: turtTech,
+      iconBg: "#383E56",
+      date: "Aug 2024 - Present",
+      points: [
+        "Recieved the SPCA Animal Advocacy Award Winner 2024 with $9000 in funding.",
+        "Award reciepent in the DSTA's Brainhack 2024.",
+        "Co-created a mobile game which aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
+        "Leading a team of 4 developers to design backend and technologies.",
+      ],
+    },
     {
       title: "CS Teaching Assistant",
       company_name: "National University of Singapore",
       icon: nus,
       iconBg: "#383E56",
-      date: "Aug 2024 - Dec 2024",
+      date: "Aug 2024 - Present",
       points: [
         "CS1101S Programming Methodology",
         "Conducting weekly 2 hour tutorials for a class of 8 students.",
@@ -152,12 +178,13 @@ import {
     {
       title: "SJII Alumni",
       company_name: "St Joseph's Institution International",
-      icon: shopify,
+      icon: sji,
       iconBg: "#383E56",
       date: "Jan 2015 - Jan 2020",
       points: [
         "Graduated with nominations for the Computing award and the Foo Chai Kai best scout award.",
         "Vice-chairman and treasuerer of the school's scout group.",
+        "Initiated and took charge of mentorship program for juniors to help them with their studies.",
         "Wrote 4000 research paper on analysing heap data structures",
       ],
     },
@@ -209,7 +236,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: turtogotchi,
       source_code_link: "https://github.com/",
     },
     {
@@ -230,8 +257,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: hack4good,
+      source_code_link: "https://github.com/kohkakohla/Big-Heart-Fullstack-Web-Application",
     },
     {
       name: "Runner's High",
@@ -251,8 +278,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: run,
+      source_code_link: "https://github.com/Hoodini231/RunnersHigh",
     },
     {
       name: "Train Management System",
@@ -272,8 +299,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: TBS,
+      source_code_link: "https://github.com/Hoodini231/FullStack-Train-Management-and-Booking-",
     },
     {
       name: "SAF Automation Script",
@@ -293,8 +320,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: script,
+      source_code_link: "https://github.com/Hoodini231/Ambulance-Daily-Auto-Text-report-generator",
     },
     {
       name: "Forex Monitor App",
@@ -315,7 +342,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Hoodini231/Currency-Forex--Desktop-Application",
     },
   ];
   
