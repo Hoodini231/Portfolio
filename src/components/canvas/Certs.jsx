@@ -38,7 +38,7 @@ const CertCanvas = ({ icon }) => {
   return (
     <Canvas
       frameLoop = "demand"
-      camera={{ position: [12, 6, 3], fov: 15 }}
+      camera={{ position: [0, 4, 12], fov: 15 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
