@@ -54,18 +54,19 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p variants={fadeIn("","",0.1, 1)} className = 'mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          Check out my projects below. Click on the Github icon to view the source code.
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          Check out my projects below. Click on the GitHub icon to view the source code.
         </motion.p>
-      </div >
+      </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* Responsive Grid Layout */}
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </ >
-  )
-}
+    </>
+  );
+};
 
 export default SectionWrapper(Works, "works");

@@ -6,7 +6,6 @@ import { styles } from '../style';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { style } from 'framer-motion/client';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -20,8 +19,8 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450
         }}
-        className='bg-tertiary py-5 px-12 rounded-[20px] min-h-[280px] flex flex-col justify-center items-center'>
-          <img src={ icon } alt={ title } className="w-16 h-16 object-contain " />
+        className="glitch-border bg-tertiary py-5 px-12 rounded-[20px] min-h-[280px] flex flex-col justify-center items-center">
+          <img src={ icon } alt={ title } className="w-32 h-32 object-contain " />
           <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
         </div>
       </ motion.div>

@@ -1,35 +1,21 @@
 import { t } from "maath/dist/misc-19a3ec46.esm";
 import {
-    mobile,
+    ticTacToes,
+    cardDex,
     backend,
-    creator,
-    web,
+    cpfb,
+    mobileDeveloper,
+    fullStack,
+    techEnthu,
     javascript,
-    typescript,
-    html,
-    css,
     reactjs,
-    redux,
-    tailwind,
     nodejs,
     mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
     aiSg1,
     dataAnalyst,
     sqlHR,
     nus,
     sji,
-    turtTech,
     turtogotchi,
     hack4good,
     TBS,
@@ -38,7 +24,8 @@ import {
     firebase,
     python,
     java,
-    sql
+    sql,
+    nextJs
 
   } from "../assets";
   
@@ -60,11 +47,11 @@ import {
   const services = [
     {
       title: "Full-Stack Developer",
-      icon: web,
+      icon: fullStack,
     },
     {
       title: "Mobile Developer",
-      icon: mobile,
+      icon: mobileDeveloper,
     },
     {
       title: "Backend Developer",
@@ -72,7 +59,7 @@ import {
     },
     {
       title: "Tech Entusiast",
-      icon: creator,
+      icon: techEnthu,
     },
   ];
   const certificates = [
@@ -96,58 +83,76 @@ import {
   const technologies = [
     {
       name: "JavaScript",
+      type: "language",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
+      type: "frontend",
       icon: reactjs,
     },
     {
+      name: "Next JS",
+      type: "frontend",
+      icon: nextJs,
+    },
+    {
       name: "Node JS",
+      type: "backend",
       icon: nodejs,
     },
     {
       name: "MongoDB",
+      type: "backend",
       icon: mongodb,
     },
     {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "sql",
+      name: "SQL",
+      type: "backend",
       icon: sql
     },
     {
-      name: "python",
+      name: "Python",
+      type: "language",
       icon: python
     }, 
     {
-      name: "java",
+      name: "Java",
+      type: "language",
       icon: java
     },
     {
-      name: "firebase",
+      name: "Firebase",
+      type: "backend",
       icon: firebase
     }
   ];
   
   const experiences = [
+    // {
+    //   title: "Co-Creator and Full Stack Developer",
+    //   company_name: "TurtTech",
+    //   icon: turtTech,
+    //   iconBg: "#383E56",
+    //   date: "Aug 2024 - Present",
+    //   points: [
+    //     "Recieved the SPCA Animal Advocacy Award Winner 2024 with $9000 in funding.",
+    //     "Award reciepent in the DSTA's Brainhack 2024.",
+    //     "Co-created a mobile game which aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
+    //     "Leading a team of 4 developers to design backend and technologies.",
+    //   ],
+    // },
     {
-      title: "Co-Creator and Full Stack Developer",
-      company_name: "TurtTech",
-      icon: turtTech,
-      iconBg: "#383E56",
-      date: "Aug 2024 - Present",
+      title: "Software Developer Intern",
+      company_name: "Central Provident Fund Board",
+      icon: cpfb,
+      iconBg: "#E6DEDD",
+      date: "Jan 2025 - Present",
       points: [
-        "Recieved the SPCA Animal Advocacy Award Winner 2024 with $9000 in funding.",
-        "Award reciepent in the DSTA's Brainhack 2024.",
-        "Co-created a mobile game which aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
-        "Leading a team of 4 developers to design backend and technologies.",
+        "Developed Java services and Java batch processes with Spring batch framework and IBM DB2 Relational mainframe databases.",
+        "Experienced using Java, JCL, JSL, SQL, Spring-Batch, SDLC workflow and IBM DB2.",
+        "Conducted Unit Testing, SIT, and UAT.",
+        "Collaborated within an Agile team, with weekly stand-ups."
       ],
     },
     {
@@ -155,7 +160,7 @@ import {
       company_name: "National University of Singapore",
       icon: nus,
       iconBg: "#383E56",
-      date: "Aug 2024 - Present",
+      date: "Aug 2024 - Dec 2024",
       points: [
         "CS1101S Programming Methodology",
         "Conducting weekly 2 hour tutorials for a class of 8 students.",
@@ -170,7 +175,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Aug 2024 - Present",
       points: [
-        "First Class Honours with 4.6 GPA",
+        "Second Upper Class Honours with 4.3 GPA",
         "Computing RAG Project director, resulting in computing's best ever performance in 2024.",
         "Key courses: CS2030S Programming Methodology 2, CS2040S Data Structures and Algorithms, CS2102 Database Systems, CS2103T Software Engineering.",
       ],
@@ -193,35 +198,59 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+        "I am confident that Shaun will bring the same level of creativity, ownership and excellence to any future endevours.",
+      name: "Chee Keong LIM",
+      designation: "Senior Deputy Director",
+      company: "Central Provident Fund Board",
+      image: cpfb,
+    }
   ];
   
   const projects = [
     {
+      name:"[In-Progress] CardeDex",
+      description: "A centralized Pokemon TCG platform to make collecting, purchasing and enjoying pokemon much easier.",
+      tags:[
+        {
+          name: "NextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python FASTAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: cardDex,
+      source_code_link: "https://github.com/Hoodini231/cardex"
+    },
+    {
+      name:"Accessable Tic-Tack-Toe",
+      description: "A web muliplayer game that aims to make the game of tic-tack-toe more accessable to impaired individuals.",
+      tags:[
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongoDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "webSockets",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: ticTacToes,
+      source_code_link: "https://github.com/Hoodini231/tictactoes"
+    },
+    {
       name: "Turtogotchi",
       description:
-        "Awarded Runner's up to People Choice Award out of 150 teams at DSTA Brainhack. This project aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
+        "Awarded SPCA Animal Advocacy Grant, Awarded recipent of 150 teams at DSTA Brainhack. This project aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
       tags: [
         {
           name: "flutter",
@@ -237,7 +266,7 @@ import {
         },
       ],
       image: turtogotchi,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Hoodini231/Turtogatchi",
     },
     {
       name: "Big Heart Volunteering",
@@ -322,27 +351,6 @@ import {
       ],
       image: script,
       source_code_link: "https://github.com/Hoodini231/Ambulance-Daily-Auto-Text-report-generator",
-    },
-    {
-      name: "Forex Monitor App",
-      description:
-        "A desktop app which displays the current exchange rates of various currencies and shows the user if it has gone up or down via webscraping.",
-      tags: [
-        {
-          name: "python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "beautifulsoup4",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tkinter",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/Hoodini231/Currency-Forex--Desktop-Application",
     },
   ];
   

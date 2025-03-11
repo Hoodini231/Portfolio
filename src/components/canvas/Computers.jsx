@@ -1,63 +1,106 @@
-import { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, SpotLight, useGLTF } from '@react-three/drei';
-
+import { Suspense, useEffect, useState, useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
+
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF('./route_1/scene.gltf');
+  const character = useGLTF('./magnemite/scene.gltf');
+  const lucario = useGLTF('./lucario/scene.gltf');
+  const ref = useRef();
+  let direction = 1;
+  const speed = 0.07;
+  
+  const minRotation = 0.17; // 10 degrees in radians
+  const maxRotation = 1.05; // 60 degrees in radians
+
+  const directionRef = useRef(1); // Store direction persistently
+
+  useFrame((state, delta) => {
+    if (ref.current) {
+      // Apply rotation
+      ref.current.rotation.y += directionRef.current * delta * speed;
+  
+      // Reverse direction when hitting limits
+      if (ref.current.rotation.y > maxRotation) {
+        ref.current.rotation.y = maxRotation; // Stop exactly at max
+        directionRef.current = -1; // Reverse direction
+      }
+      if (ref.current.rotation.y < minRotation) {
+        ref.current.rotation.y = minRotation; // Stop exactly at min
+        directionRef.current = 1; // Reverse direction
+      }
+    }
+  });
+
   return (
-    <mesh>
-      <SpotLight
-        position = {[0, 14, -0.5]}
-        angle={0.40}
-        penumbra={1.5}
-        intensity={7000}
-        distance={24}
+    <mesh ref={ref}>
+      <directionalLight
+        position={[10, 20, 10]}
+        intensity={4.5}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
       />
-      <hemisphereLight intensity={0.3}
-      groundColor="black" />
+      <hemisphereLight intensity={0.5} groundColor="black" />
       <pointLight intensity={5} />
-      
-      <primitive 
+
+      {/* Background (Computers / Route_1) */}
+      <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.05 : 0.36}
         position={isMobile ? [-1, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.01]}
+        rotation={[-0.01, 0.5, -0.01]}
       />
+      <primitive
+        object={character.scene}
+        scale={isMobile ? 0.005 : 0.0038}
+        position={isMobile ? [-1, -3, -2.2] : [4.8, -2.35, 1.8]}
+        rotation={[-0.01, 0.5, -0.01]}
+      />
+      <primitive
+      object={lucario.scene}
+      scale={isMobile ? 0.005 : 0.8}
+      position={isMobile ? [-1, -3, -2.2] : [3.8, -2.77, 5.8]}
+      rotation={[-0.01, 3.5, -0.01]}
+    />
     </mesh>
-  )
-}
+  );
+};
+
 const ComputersCanvas = () => {
-  const [isMobie, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
     mediaQuery.addEventListener('change', handleMediaQueryChange);
     return () => mediaQuery.removeEventListener('change', handleMediaQueryChange);
   }, []);
-  
+
   return (
     <Canvas
-      frameLoop = "demand"
+      frameLoop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [25, -5, -5], fov: 20 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls 
           enableZoom={false} 
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2.1}
+          minPolarAngle={Math.PI / 2.1}
+          minAzimuthAngle={Math.PI / 18} // 10 degrees
+          maxAzimuthAngle={Math.PI / 2}  // 60 degrees
         />
-        <Computers isMobile={isMobie} />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
-  )
-}
+  );
+};
+
 export default ComputersCanvas;

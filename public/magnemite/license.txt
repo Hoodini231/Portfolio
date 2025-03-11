@@ -1,0 +1,11 @@
+Model Information:
+* title:	Magnemite
+* source:	https://sketchfab.com/3d-models/magnemite-6af1c151563742ab95f13a8bf702a8de
+* author:	ion_omat (https://sketchfab.com/ion_omat)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Magnemite" (https://sketchfab.com/3d-models/magnemite-6af1c151563742ab95f13a8bf702a8de) by ion_omat (https://sketchfab.com/ion_omat) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
