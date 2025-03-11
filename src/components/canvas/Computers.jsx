@@ -48,7 +48,7 @@ const Computers = ({ isMobile }) => {
       {/* Background (Computers / Route_1) */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.1 : 0.36}
+        scale={isMobile ? 0.3 : 0.36}
         position={isMobile ? [0, -3.25, -1.5] : [0, -3.25, -1.5]}
         rotation={[-0.01, 0.5, -0.01]}
       />
