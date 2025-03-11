@@ -48,20 +48,20 @@ const Computers = ({ isMobile }) => {
       {/* Background (Computers / Route_1) */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.036 : 0.36}
-        position={isMobile ? [-1, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.1 : 0.36}
+        position={isMobile ? [0, -3.25, -1.5] : [0, -3.25, -1.5]}
         rotation={[-0.01, 0.5, -0.01]}
       />
       <primitive
         object={character.scene}
         scale={isMobile ? 0.0038 : 0.0038}
-        position={isMobile ? [-1, -3, -2.2] : [4.8, -2.35, 1.8]}
+        position={isMobile ? [4.8, -2.35, 1.8] : [4.8, -2.35, 1.8]}
         rotation={[-0.01, 0.5, -0.01]}
       />
       <primitive
       object={lucario.scene}
       scale={isMobile ? 0.8 : 0.8}
-      position={isMobile ? [-1, -3, -2.2] : [3.8, -2.77, 5.8]}
+      position={isMobile ? [3.8, -2.77, 5.8] : [3.8, -2.77, 5.8]}
       rotation={[-0.01, 3.5, -0.01]}
     />
     </mesh>
