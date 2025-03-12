@@ -55,13 +55,13 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={character.scene}
         scale={isMobile ? 0.0038 : 0.0038}
-        position={isMobile ? [4.8, -2.35, 1.8] : [4.8, -2.35, 1.8]}
+        position={isMobile ? [4.8, -2.7, 1.8] : [4.8, -2.35, 1.8]}
         rotation={[-0.01, 0.5, -0.01]}
       />
       <primitive
       object={lucario.scene}
       scale={isMobile ? 0.8 : 0.8}
-      position={isMobile ? [3.8, -2.77, 5.8] : [3.8, -2.77, 5.8]}
+      position={isMobile ? [3.8, -2.9, 5.8] : [3.8, -2.77, 5.8]}
       rotation={[-0.01, 3.5, -0.01]}
     />
     </mesh>
