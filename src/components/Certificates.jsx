@@ -15,7 +15,7 @@ const Certificates = () => {
     </motion.div>
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {certificates.map((cert) => (
-        <div key={cert.name} className="w-[380px] h-[380px]">
+        <div key={cert.name} className="w-[380px] h-[380px] sm:w-[190px] sm:h-[190px]">
           <CertCanvas icon={cert.icon} />
           <h3 className="text-white-100 font-semibold flex flex-row flex-wrap justify-center gap-10">{cert.name}</h3>
           <p className="text-secondary flex flex-row flex-wrap justify-center gap-10">{cert.giver}</p>

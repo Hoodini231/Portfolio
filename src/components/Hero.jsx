@@ -9,16 +9,16 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-full z-0">
         <ComputersCanvas />
       </div>
-      <div className="absolute top-56 left-16 z-10 sm:left-4 flex flex-row items-start gap-5 pl-10">
+      <div className="absolute top-46 left-16 z-10 sm:left-0 sm:top-24 md:left-4 md:top-36 flex flex-row items-start gap-5 pl-10">
         <div className="flex flex-col justify-center items-center mt-5">
           <div className ="w-5 h-5 rounded-full bg-[#29a638]" />
-          <div className="w-1 sm:h-80 h-40 green-gradient rounded-full" />
+          <div className="w-1 sm:h-20 h-40 green-gradient rounded-full" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white` }>Hi, I'm 
+          <h1 className={`${styles.heroHeadText} text-white sm:text-[24px]` }>Hi, I'm 
              <span className="text-[#32e847]"> Shaun</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 sm:text-[14px] text-white-100`}>
             I'm a Full Stack Developer who loves to design 
             <br className="sm:block hidden" /> 
             backend processes with a diverse set of skills
