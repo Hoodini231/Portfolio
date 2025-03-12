@@ -6,10 +6,10 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className="absolute inset-0 w-full h-[700px] xs:h-full z-0">
+      <div className="absolute inset-0 w-full h-full z-0">
         <ComputersCanvas />
       </div>
-      <div className="absolute left-5 top-20 xs:left-0 xs:top-24 md:top-46 md:left-16 z-10 flex flex-row items-start gap-5 pl-10">
+      <div className="absolute left-0 top-24 xs:left-0 xs:top-24 md:top-46 md:left-16 z-10 flex flex-row items-start gap-5 pl-10">
         <div className="flex flex-col justify-center items-center mt-5">
           <div className ="w-5 h-5 rounded-full bg-[#29a638]" />
           <div className="w-1 sm:h-20 h-40 green-gradient rounded-full" />
