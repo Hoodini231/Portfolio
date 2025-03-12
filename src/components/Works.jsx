@@ -36,7 +36,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
   );
 
   return isMobile ? (
-    <div className="w-[200px]">
+    <div className="w-full">
       {CardContent}
     </div>
   ) : (
@@ -83,7 +83,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-10">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} isMobile={isMobile} />
         ))}
