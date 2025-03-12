@@ -15,8 +15,8 @@ const Tech = () => {
   return (
     <div className="flex flex-col items-center gap-8">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Technical</p>
-        <h2 className={styles.sectionHeadText}>Skills.</h2>
+        <p className={`${styles.sectionSubText}`}>Technical</p>
+        <h2 className={`${styles.sectionHeadText}`}>Skills.</h2>
       </motion.div>
 
       {/* 3D Icons */}
@@ -35,7 +35,7 @@ const Tech = () => {
         <div className="grid grid-cols-3 gap-6 text-center">
           {/* Front-end Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2">Front-end</h4>
+            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Front-end</h4>
             <ul className="list-none space-y-1">
               {frontendTech.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
@@ -45,7 +45,7 @@ const Tech = () => {
 
           {/* Back-end Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2">Back-end</h4>
+            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Back-end</h4>
             <ul className="list-none space-y-1">
               {backendTech.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
@@ -55,7 +55,7 @@ const Tech = () => {
 
           {/* Languages Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2">Languages</h4>
+            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Languages</h4>
             <ul className="list-none space-y-1">
               {languages.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
