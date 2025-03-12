@@ -9,7 +9,7 @@ import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[150px] w-full sm:w-[250px]">
+    <Tilt className="w-[150px] xs:w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -19,9 +19,9 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary py-5 px-12 xs:py-3 xs:px-6 rounded-[20px] min-h-[280px] xs:min-h-[200px] flex flex-col justify-center items-center">
-          <img src={icon} alt={title} className="w-32 h-32 xs:w-24 xs:h-24 object-contain" />
-          <h3 className="text-white text-[20px] xs:text-[16px] font-bold text-center">{title}</h3>
+        className="bg-tertiary py-3 px-6 xs:py-5 xs:px-12 rounded-[20px] min-h-[200px] xs:min-h-[280px] flex flex-col justify-center items-center">
+          <img src={icon} alt={title} className="w-24 h-24 xs:w-32 xs:h-32 object-contain" />
+          <h3 className="text-white text-[16px] xs:text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -32,12 +32,12 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-[20px] xs:text-[16px] md:text-[20px]`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText} text-[36px] xs:text-[28px] md:text-[36px]`}>Overview.</h2>
+        <p className={`${styles.sectionSubText} text-[14px] xs:text-[20px] md:text-[20px]`}>Introduction</p>
+        <h2 className={`${styles.sectionHeadText} text-[28px] xs:text-[36px] md:text-[36px]`}>Overview.</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] xs:text-[12px] md:text-[17px] max-w-3xl leading-[30px] xs:leading-[24px]"
+        className="mt-4 text-secondary text-[12px] xs:text-[17px] max-w-3xl leading-[24px] xs:leading-[30px]"
       >
         <p>I am a full stack developer with a passion for creating beautiful, responsive, and user-friendly websites. I have a strong foundation in web development technologies such as HTML, CSS, JavaScript, React, and Node.js. I am looking for opportunities to work on exciting projects and collaborate with other talented developers.</p>
         

@@ -22,7 +22,7 @@ const Tech = () => {
       {/* 3D Icons */}
       <div className="flex flex-row flex-wrap justify-center gap-10 sm:gap-0 md:gap-10">
         {technologies.map((technology) => (
-          <div key={technology.name} className="w-28 h-28 md:w-28 md:h-28 sm:w-16 sm:h-16">
+          <div key={technology.name} className="w-16 h-16 xs:w-28 xs:h-28">
             <BallCanvas icon={technology.icon} />
           </div>
         ))}
@@ -35,7 +35,7 @@ const Tech = () => {
         <div className="grid grid-cols-3 gap-6 text-center">
           {/* Front-end Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Front-end</h4>
+            <h4 className="text-[12px] font-semibold underline mb-2 sm:text-[14px] md:text-[17px]">Front-end</h4>
             <ul className="list-none space-y-1">
               {frontendTech.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
@@ -45,7 +45,7 @@ const Tech = () => {
 
           {/* Back-end Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Back-end</h4>
+            <h4 className="text-[12px] font-semibold underline mb-2 sm:text-[14px] md:text-[17px]">Back-end</h4>
             <ul className="list-none space-y-1">
               {backendTech.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
@@ -55,7 +55,7 @@ const Tech = () => {
 
           {/* Languages Column */}
           <div>
-            <h4 className="text-md font-semibold underline mb-2 xs:text-[12px] sm:text-[14px]">Languages</h4>
+            <h4 className="text-[12px] font-semibold underline mb-2 sm:text-[14px] md:text-[17px]">Languages</h4>
             <ul className="list-none space-y-1">
               {languages.map((tech) => (
                 <li key={tech.name} className="text-sm">{tech.name}</li>
