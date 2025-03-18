@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pidgey
+* source:	https://sketchfab.com/3d-models/pidgey-312591c6f0894d59985c57ddd77e4c66
+* author:	nguyenlouis32 (https://sketchfab.com/nguyenlouis32)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pidgey" (https://sketchfab.com/3d-models/pidgey-312591c6f0894d59985c57ddd77e4c66) by nguyenlouis32 (https://sketchfab.com/nguyenlouis32) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

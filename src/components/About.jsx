@@ -39,9 +39,9 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[12px] xs:text-[17px] max-w-3xl leading-[24px] xs:leading-[30px]"
       >
-        <p>I am a full stack developer with a passion for creating beautiful, responsive, and user-friendly websites. I have a strong foundation in web development technologies such as HTML, CSS, JavaScript, React, and Node.js. I am looking for opportunities to work on exciting projects and collaborate with other talented developers.</p>
+        <p>I am a full stack developer with a passion for creating beautiful, responsive, and user-friendly websites. I have a strong foundation in back-end and web development technologies such as JavaScript, React, Node.js, SQL, NoSQL and Mainframes. I am looking for opportunities to work on exciting projects and collaborate with other talented developers.</p>
         
-        <p>Outside of coding, I enjoy dancing, reading books and playing sports like dodgeball!</p>
+        <p>Outside of coding, I enjoy dancing, reading books, collecting pokemon cards and I play competitive dodgeball!</p>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap justify-center gap-10">

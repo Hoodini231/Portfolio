@@ -149,10 +149,10 @@ import {
       iconBg: "#E6DEDD",
       date: "Jan 2025 - Present",
       points: [
-        "Developed Java services and Java batch processes with Spring batch framework and IBM DB2 Relational mainframe databases.",
-        "Experienced using Java, JCL, JSL, SQL, Spring-Batch, SDLC workflow and IBM DB2.",
-        "Conducted Unit Testing, SIT, and UAT.",
-        "Collaborated within an Agile team, with weekly stand-ups."
+        "Engineered and optimized Java batch jobs using Spring Batch, JCL, and SQL, processing millions of records annually on IBM DB2 Mainframe.",
+        "Resolved an average of 3-4 production issues weekly.",
+        "Enhanced testing and code reliability maintaining 95%+ test coverage.",
+        "Conducted data patching and root cause analysis reducing data inconsistencies."
       ],
     },
     {
@@ -176,7 +176,7 @@ import {
       date: "Aug 2024 - Present",
       points: [
         "Second Upper Class Honours with 4.3 GPA",
-        "Computing RAG Project director, resulting in computing's best ever performance in 2024.",
+        "Computing RAG Project director, resulting in computing's best ever performance in 2024 achieving Silver.",
         "Key courses: CS2030S Programming Methodology 2, CS2040S Data Structures and Algorithms, CS2102 Database Systems, CS2103T Software Engineering.",
       ],
     },
@@ -209,7 +209,7 @@ import {
   const projects = [
     {
       name:"[In-Progress] CardeDex",
-      description: "A centralized Pokemon TCG platform to make collecting, purchasing and enjoying pokemon much easier.",
+      description: "A centralized Pokemon TCG platform to make collecting, purchasing and enjoying pokemon much easier. Incorporating real-time price's and price analytics for purchase desisions.",
       tags:[
         {
           name: "NextJS",
@@ -228,7 +228,7 @@ import {
       source_code_link: "https://github.com/Hoodini231/cardex"
     },
     {
-      name:"Accessable Tic-Tack-Toe",
+      name:"Accessible Tic-Tack-Toe",
       description: "A web muliplayer game that aims to make the game of tic-tack-toe more accessable to impaired individuals.",
       tags:[
         {
@@ -292,7 +292,7 @@ import {
     {
       name: "Runner's High",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Cross platformed mobile application aimed at making running fun through gamifiation.",
       tags: [
         {
           name: "react",
@@ -303,7 +303,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "bootstrap",
+          name: "Gemini",
           color: "pink-text-gradient",
         },
       ],
@@ -334,7 +334,7 @@ import {
     {
       name: "SAF Automation Script",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Automated processing daily situational reports for ambulance crews for Singapore's Army Medical HQ",
       tags: [
         {
           name: "python",
@@ -349,8 +349,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: script,
-      source_code_link: "https://github.com/Hoodini231/Ambulance-Daily-Auto-Text-report-generator",
+      image: script
     },
   ];
   

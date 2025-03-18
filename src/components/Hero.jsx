@@ -21,7 +21,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a Full Stack Developer who loves to design 
             <br className="sm:block hidden" /> 
-            backend processes with a diverse set of skills
+             backend processes with a diverse set of skills
           </p>
         </div>
       </div>

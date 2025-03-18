@@ -7,6 +7,10 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF('./route_1/scene.gltf');
   const character = useGLTF('./magnemite/scene.gltf');
   const lucario = useGLTF('./lucario/scene.gltf');
+  const pidgey = useGLTF('./pidgey/scene.gltf');
+  const pidgey2 = useGLTF('./pidgey2/scene.gltf');
+  const pidgey3 = useGLTF('./pidgey3/scene.gltf');
+  const pigeotto = useGLTF('./pidgeotto/scene.gltf');
   const ref = useRef();
   let direction = 1;
   const speed = 0.07;
@@ -63,7 +67,43 @@ const Computers = ({ isMobile }) => {
       scale={isMobile ? 0.8 : 0.8}
       position={isMobile ? [3.8, -2.9, 5.8] : [3.8, -2.77, 5.8]}
       rotation={[-0.01, 3.5, -0.01]}
-    />
+      />
+      <primitive
+      object={pidgey.scene}
+      scale={isMobile ? 0.5 : 0.6}
+      position={isMobile ? [3.8, -2.9, 5.8] : [0.8, 1.37, 1.8]}
+      rotation={[0.5, -1, 0]}
+      />
+      <primitive
+      object={pidgey2.scene}
+      scale={isMobile ? 0.5 : 0.6}
+      position={isMobile ? [0.7, 1.39, 1.8] : [0.4, 0.95, 0.7]}
+      rotation={[0.7, -1, 0]}
+      />
+      <primitive
+      object={pidgey3.scene}
+      scale={isMobile ? 0.5 : 0.55}
+      position={isMobile ? [0.7, 1.35, 1.95] : [-0.7, 1.52, 1.95]}
+      rotation={[0.4, -1.1, 0]}
+      />
+      {/* <primitive
+      object={pidgey.scene}
+      scale={isMobile ? 0.8 : 0.8}
+      position={isMobile ? [3.8, -2.9, 5.8] : [3.8, 5, 6.8]}
+      rotation={[-0.01, 3.5, -0.01]}
+      />
+      <primitive
+      object={pidgey.scene}
+      scale={isMobile ? 0.8 : 0.8}
+      position={isMobile ? [3.8, -2.9, 5.8] : [3.8, 5, 5.5]}
+      rotation={[-0.01, 3.5, -0.01]}
+      />
+      <primitive
+      object={pigeotto.scene}
+      scale={isMobile ? 0.8 : 0.8}
+      position={isMobile ? [3.8, -2.9, 5.8] : [3.8, 5, 6.2]}
+      rotation={[-0.01, 3.5, -0.01]}
+      /> */}
     </mesh>
   );
 };
