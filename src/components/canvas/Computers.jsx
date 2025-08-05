@@ -80,12 +80,6 @@ const Computers = ({ isMobile }) => {
       position={isMobile ? [0.7, 1.39, 1.8] : [0.4, 0.95, 0.7]}
       rotation={[0.7, -1, 0]}
       />
-      <primitive
-      object={pidgey3.scene}
-      scale={isMobile ? 0.5 : 0.55}
-      position={isMobile ? [0.7, 1.35, 1.95] : [-0.7, 1.52, 1.95]}
-      rotation={[0.4, -1.1, 0]}
-      />
       {/* <primitive
       object={pidgey.scene}
       scale={isMobile ? 0.8 : 0.8}
