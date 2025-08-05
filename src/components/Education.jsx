@@ -107,20 +107,20 @@ const Education = () => {
             <img 
               src={education.icon} 
               alt={education.company_name} 
-              className="w-20 h-16 rounded-lg object-contain mb-4 bg-tertiary/20"
+              className="w-16 h-12 rounded-lg object-contain mb-3 bg-tertiary/20"
             />
             
             {/* Card */}
-            <div className="bg-tertiary p-4 rounded-2xl shadow-card w-full relative">
-              <div className="mb-3">
-                <h3 className="text-white text-[18px] font-bold">{education.title}</h3>
-                <p className="text-secondary text-[14px] font-semibold">{education.company_name}</p>
-                <span className="text-secondary text-[12px]">{education.date}</span>
+            <div className="bg-tertiary p-3 rounded-2xl shadow-card w-full relative">
+              <div className="mb-2">
+                <h3 className="text-white text-[14px] font-bold">{education.title}</h3>
+                <p className="text-secondary text-[12px] font-semibold">{education.company_name}</p>
+                <span className="text-secondary text-[10px]">{education.date}</span>
               </div>
               
-              <ul className="mt-5 list-disc ml-5 space-y-2">
+              <ul className="mt-2 list-disc ml-5 space-y-1">
                 {education.points.map((point, pointIndex) => (
-                  <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">{point}</li>
+                  <li key={`experience-point-${index}`} className="text-white-100 text-[10px] pl-1 tracking-wider">{point}</li>
                 ))}
               </ul>
             </div>
@@ -135,28 +135,28 @@ const Education = () => {
           <motion.div
             key={index}
             variants={fadeIn("up", "spring", index * 0.2, 0.75)}
-            className="mb-8 relative"
+            className="mb-6 relative"
           >
             {/* Image Above Card */}
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-3">
               <img 
                 src={education.icon} 
                 alt={education.company_name} 
-                className="w-24 h-20 rounded-lg object-contain bg-tertiary/20"
+                className="w-16 h-14 rounded-lg object-contain bg-tertiary/20"
               />
             </div>
             
             {/* Card */}
-            <div className="bg-tertiary p-6 rounded-2xl shadow-card relative">
-              <div className="mb-4">
-                <h3 className="text-white text-[20px] font-bold">{education.title}</h3>
-                <p className="text-secondary text-[16px] font-semibold">{education.company_name}</p>
-                <span className="text-secondary text-[14px]">{education.date}</span>
+            <div className="bg-tertiary p-4 rounded-2xl shadow-card relative">
+              <div className="mb-3">
+                <h3 className="text-white text-[16px] font-bold">{education.title}</h3>
+                <p className="text-secondary text-[14px] font-semibold">{education.company_name}</p>
+                <span className="text-secondary text-[12px]">{education.date}</span>
               </div>
               
-              <ul className="mt-5 list-disc ml-5 space-y-2">
+              <ul className="mt-3 list-disc ml-5 space-y-1">
                 {education.points.map((point, pointIndex) => (
-                  <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">{point}</li>
+                  <li key={`experience-point-${index}`} className="text-white-100 text-[12px] pl-1 tracking-wider">{point}</li>
                 ))}
               </ul>
             </div>

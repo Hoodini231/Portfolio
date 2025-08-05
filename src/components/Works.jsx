@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { useEffect, useState } from 'react';
 import { Tilt } from 'react-tilt';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, isMobile }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   // Function to get background color from tag color class
   const getBackgroundColor = (colorClass) => {
     switch (colorClass) {
@@ -56,13 +56,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
     </div>
   );
 
-  return isMobile ? (
-    <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
-      <div className="w-full">
-        {CardContent}
-      </div>
-    </motion.div>
-  ) : (
+  return (
     <motion.div
       variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
     >
@@ -81,18 +75,6 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 };
 
 const Works = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 640); // Consider mobile if < 640px (Tailwind's `sm`)
-    };
-
-    handleResize(); // Check initially
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -108,7 +90,7 @@ const Works = () => {
 
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} isMobile={isMobile} />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

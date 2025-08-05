@@ -74,6 +74,21 @@ import {
       icon: javascript,
     },
     {
+      name: "TypeScript",
+      type: "language",
+      icon: typescript
+    },
+    {
+      name: "Python",
+      type: "language",
+      icon: python
+    }, 
+    {
+      name: "Java",
+      type: "language",
+      icon: java
+    },
+    {
       name: "React JS",
       type: "frontend",
       icon: reactjs,
@@ -96,16 +111,7 @@ import {
       type: "language",
       icon: sql
     },
-    {
-      name: "Python",
-      type: "language",
-      icon: python
-    }, 
-    {
-      name: "Java",
-      type: "language",
-      icon: java
-    },
+
     {
       name: "AWS",
       type: "backend",
@@ -129,11 +135,6 @@ import {
       type: "backend"
     },
     {
-      name: "TypeScript",
-      type: "language",
-      icon: typescript
-    },
-    {
       name: "Docker",
       type: "backend",
       icon: docker
@@ -143,14 +144,14 @@ import {
   const experiences = [
     {
       title: "[Incoming] Software Engineer Intern",
-      company_name: "Lirvana Labs",
+      company_name: "Lirvana.ai",
       location: "Palo Alto, USA",
       icon: lirvana,
       iconBg: "#383E56",
       date: "Aug 2025 - Jul 2026",
       points: [
         "NOC Silicon Valley internship",
-        "Will be developing web applications using Angular JS, Java Spring boot, GCP and GraphQL",
+        "Will be developing applications using Angular JS, Java Spring boot, GCP and GraphQL",
       ],
     },
     {
