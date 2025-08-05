@@ -58,7 +58,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
   return isMobile ? (
     <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
-      <div className="w-[80%] mx-auto">
+      <div className="w-full">
         {CardContent}
       </div>
     </motion.div>
