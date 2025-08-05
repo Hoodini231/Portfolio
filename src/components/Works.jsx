@@ -8,6 +8,22 @@ import { useEffect, useState } from 'react';
 import { Tilt } from 'react-tilt';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, isMobile }) => {
+  // Function to get background color from tag color class
+  const getBackgroundColor = (colorClass) => {
+    switch (colorClass) {
+      case "blue-text-gradient":
+        return "#2f80ed";
+      case "green-text-gradient":
+        return "#11998e";
+      case "pink-text-gradient":
+        return "#ec008c";
+      case "orange-text-gradient":
+        return "#f12711";
+      default:
+        return "#2f80ed"; // default blue
+    }
+  };
+
   const CardContent = (
     <div className="bg-tertiary p-5 rounded-2xl shadow-card w-full">
       <div className="relative w-[140px] h-[180px] xs:w-full xs:h-[230px]">
@@ -24,20 +40,25 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-[16px] xs:text-[24px]">{name}</h3>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span 
+              key={tag.name} 
+              className="px-3 py-1 rounded-full text-white text-[12px] xs:text-[14px] font-medium"
+              style={{ backgroundColor: getBackgroundColor(tag.color) }}
+            >
+              {tag.name}
+            </span>
+          ))}
+        </div>
         <p className="mt-2 text-secondary text-[12px] xs:text-[16px]">{description}</p>
-      </div>
-      
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <p key={tag.name} className={`text-[12px] xs:text-[16px] ${tag.color}`}>#{tag.name}</p>
-        ))}
       </div>
     </div>
   );
 
   return isMobile ? (
     <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
-      <div className="w-[180px]">
+      <div className="w-[80%] mx-auto">
         {CardContent}
       </div>
     </motion.div>
@@ -80,12 +101,12 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary xs:text-black sm:text-blue md:text-red lg:text-yellow-500 xl:text-green-600 text-[17px] max-w-3xl leading-[30px]">
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Check out my projects below. Click on the GitHub icon to view the source code.
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-10">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} isMobile={isMobile} />
         ))}

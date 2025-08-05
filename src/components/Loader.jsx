@@ -13,7 +13,7 @@ const Loader = () => {
           fontWeight: 'bold',
           marginTop: '40px',
         }
-      }>{progress.toFixed(2)}%</p>
+      }>Model Loading...</p>
     </Html>
   )
 }

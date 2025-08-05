@@ -9,6 +9,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import nextJs from "./nextJs.png";
 
+// Import tech logos
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -26,11 +27,21 @@ import python from "./tech/python.png";
 import firebase from "./tech/firebase.png";
 import java from "./tech/java.png";
 import sql from "./tech/sql.png";
+import aws from "./tech/aws.png";
+import gcp from "./tech/GCP.png";
+import graphQL from "./tech/GraphQL.png";
+import angular from "./tech/angular.png";
+import spring from "./tech/spring.png";
 
+// Import logos
 import nus from "./company/nus.png";
 import sji from "./company/sji.png";
 import cpfb from "./company/cpfb.png";
+import lirvana from "./company/lirvana.png";
+import NOC from "./company/NOC.jpg";
+import Stanford_logo from "./company/Stanford_logo.png";
 
+// Import project pictures
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -39,15 +50,21 @@ import cardDex from "./CardDex.png";
 import ticTacToes from "./ticTackToes.png";
 import hack4good from "./hack4good.png";
 import TBS from "./TBS.png";
+import run from "./runners.png";
+import script from "./script.png";
 
+// Import certificates
 import aiSg1 from "./aiSgLvl1.png";
 import dataAnalyst from "./dataAnalystAssociate.png";
 import sqlHR from "./sqlHackerRank.png";
 
-import run from "./runners.png";
-import script from "./script.png";
 
 export {
+  angular,
+  spring,
+  gcp,
+  graphQL,
+  aws,
   cpfb,
   cardDex,
   ticTacToes,
@@ -90,5 +107,8 @@ export {
   firebase,
   java,
   sql,
-  nextJs
+  nextJs,
+  lirvana,
+  NOC,
+  Stanford_logo
 };

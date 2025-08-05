@@ -8,12 +8,14 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Certificates from './Certificates';
+import Education from './Education';
 
 export {
   Hero,
   Navbar,
   About,
   Tech,
+  Education,
   Experience,
   Works,
   Feedbacks,

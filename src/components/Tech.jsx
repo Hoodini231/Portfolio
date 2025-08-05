@@ -11,17 +11,20 @@ const Tech = () => {
   const frontendTech = technologies.filter((tech) => tech.type === "frontend");
   const backendTech = technologies.filter((tech) => tech.type === "backend");
   const languages = technologies.filter((tech) => tech.type === "language");
+  
+  // Filter technologies that have icons for 3D display
+  const technologiesWithIcons = technologies.filter((tech) => tech.icon);
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-start gap-8">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>Technical</p>
         <h2 className={`${styles.sectionHeadText}`}>Skills.</h2>
       </motion.div>
 
       {/* 3D Icons */}
-      <div className="flex flex-row flex-wrap justify-center gap-10 sm:gap-0 md:gap-10">
-        {technologies.map((technology) => (
+      <div className="flex flex-row flex-wrap justify-center gap-10 sm:gap-0 md:gap-10 w-full">
+        {technologiesWithIcons.map((technology) => (
           <div key={technology.name} className="w-16 h-16 xs:w-28 xs:h-28">
             <BallCanvas icon={technology.icon} />
           </div>
@@ -29,7 +32,7 @@ const Tech = () => {
       </div>
 
       {/* Wider Text Card with Three Columns */}
-      <div className="bg-gray-800 text-white p-8 rounded-2xl shadow-lg max-w-4xl w-full">
+      <div className="bg-gray-800 text-white p-8 rounded-2xl shadow-lg max-w-4xl w-full self-center">
         <h3 className="text-lg font-semibold mb-4 text-center">Technical Skills</h3>
         
         <div className="grid grid-cols-3 gap-6 text-center">

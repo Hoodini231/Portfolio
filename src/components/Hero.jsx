@@ -10,18 +10,13 @@ const Hero = () => {
         <ComputersCanvas />
       </div>
       <div className="absolute left-0 top-28 xs:left-0 xs:top-24 md:top-46 md:left-16 z-10 flex flex-row items-start gap-5 pl-10">
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className ="w-5 h-5 rounded-full bg-[#29a638]" />
-          <div className="w-1 sm:h-40 h-30 green-gradient rounded-full" />
-        </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white` }>Hi, I'm 
              <span className="text-[#32e847]"> Shaun</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Full Stack Developer who loves to design 
+          <p className={`${styles.heroSubText} mt-2 text-white-100 justify-center items-center`}>
+            I'm a Full Stack Developer who loves to design backend processes with a diverse set of skills
             <br className="sm:block hidden" /> 
-             backend processes with a diverse set of skills
           </p>
         </div>
       </div>

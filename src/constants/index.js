@@ -1,12 +1,7 @@
-import { t } from "maath/dist/misc-19a3ec46.esm";
 import {
     ticTacToes,
     cardDex,
-    backend,
     cpfb,
-    mobileDeveloper,
-    fullStack,
-    techEnthu,
     javascript,
     reactjs,
     nodejs,
@@ -16,6 +11,7 @@ import {
     sqlHR,
     nus,
     sji,
+    lirvana,
     turtogotchi,
     hack4good,
     TBS,
@@ -25,7 +21,16 @@ import {
     python,
     java,
     sql,
-    nextJs
+    nextJs,
+    aws,
+    gcp,
+    graphQL,
+    typescript,
+    angular,
+    spring,
+    docker,
+    Stanford_logo
+
 
   } from "../assets";
   
@@ -43,25 +48,7 @@ import {
       title: "Contact",
     },
   ];
-  
-  const services = [
-    {
-      title: "Full-Stack Developer",
-      icon: fullStack,
-    },
-    {
-      title: "Mobile Developer",
-      icon: mobileDeveloper,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Tech Entusiast",
-      icon: techEnthu,
-    },
-  ];
+
   const certificates = [
     {
       name: "Data Analyst Associate",
@@ -93,13 +80,11 @@ import {
     },
     {
       name: "Next JS",
-      type: "frontend",
-      icon: nextJs,
+      type: "frontend"
     },
     {
       name: "Node JS",
-      type: "backend",
-      icon: nodejs,
+      type: "backend"
     },
     {
       name: "MongoDB",
@@ -108,7 +93,7 @@ import {
     },
     {
       name: "SQL",
-      type: "backend",
+      type: "language",
       icon: sql
     },
     {
@@ -122,32 +107,59 @@ import {
       icon: java
     },
     {
-      name: "Firebase",
+      name: "AWS",
       type: "backend",
-      icon: firebase
+      icon: aws
+    },
+    {
+      name: "GCP",
+      type: "backend",
+      icon: gcp
+    },
+    {
+      name: "GraphQL",
+      type: "backend"
+    },
+    {
+      name: "Angular JS",
+      type: "frontend"
+    },
+    {
+      name: "Java Spring",
+      type: "backend"
+    },
+    {
+      name: "TypeScript",
+      type: "language",
+      icon: typescript
+    },
+    {
+      name: "Docker",
+      type: "backend",
+      icon: docker
     }
   ];
   
   const experiences = [
-    // {
-    //   title: "Co-Creator and Full Stack Developer",
-    //   company_name: "TurtTech",
-    //   icon: turtTech,
-    //   iconBg: "#383E56",
-    //   date: "Aug 2024 - Present",
-    //   points: [
-    //     "Recieved the SPCA Animal Advocacy Award Winner 2024 with $9000 in funding.",
-    //     "Award reciepent in the DSTA's Brainhack 2024.",
-    //     "Co-created a mobile game which aims to promote education on conservation efforts and links with the local Singaporean turtle musesum to assist them financially.",
-    //     "Leading a team of 4 developers to design backend and technologies.",
-    //   ],
-    // },
+    {
+      title: "[Incoming] Software Engineer Intern",
+      company_name: "Lirvana Labs",
+      location: "Palo Alto, USA",
+      icon: lirvana,
+      iconBg: "#383E56",
+      date: "Aug 2025 - Jul 2026",
+      points: [
+        "NOC Silicon Valley internship",
+        "Will be developing web applications using Angular JS, Java Spring boot, GCP and GraphQL",
+      ],
+    },
     {
       title: "Software Developer Intern",
       company_name: "Central Provident Fund Board",
+      location: "Singapore",
       icon: cpfb,
       iconBg: "#E6DEDD",
-      date: "Jan 2025 - Present",
+      date: "Jan 2025 - Jul 2025",
       points: [
         "Engineered and optimized Java batch jobs using Spring Batch, JCL, and SQL, processing millions of records annually on IBM DB2 Mainframe.",
         "Resolved an average of 3-4 production issues weekly.",
@@ -158,6 +170,7 @@ import {
     {
       title: "CS Teaching Assistant",
       company_name: "National University of Singapore",
+      location: "Singapore",
       icon: nus,
       iconBg: "#383E56",
       date: "Aug 2024 - Dec 2024",
@@ -167,17 +180,31 @@ import {
         "Maintain close mentoring relations to provide additional support to students.",
         "Grading weekly coding assignments and providing constructive feedback to students.",
       ],
-    },
+    }
+  ];
+
+  const education = [
     {
-      title: "Year 2 Computer Science Student",
+      title: "Penultimate Computer Science Student",
       company_name: "National University of Singapore",
       icon: nus,
       iconBg: "#E6DEDD",
-      date: "Aug 2024 - Present",
+      date: "Aug 2023 - Present",
       points: [
         "Second Upper Class Honours with 4.3 GPA",
         "Computing RAG Project director, resulting in computing's best ever performance in 2024 achieving Silver.",
         "Key courses: CS2030S Programming Methodology 2, CS2040S Data Structures and Algorithms, CS2102 Database Systems, CS2103T Software Engineering.",
+      ],
+    },
+    {
+      title: "Stanford MSE | NOC Silicon Valley",
+      company_name: "Stanfor University / National University of Singapore",
+      icon: Stanford_logo,
+      iconBg: "#E6DEDD",
+      date: "Aug 2025 - Present",
+      points: [
+        "NUS exclusive program to send top students to Silicon Valley for 1 year to engage in MSE courses at Stanford.",
+        "Work-study program with start-up companies to install entrepreneurship expereicences in students ",
       ],
     },
     {
@@ -381,4 +408,4 @@ import {
     },
   ] 
   
-  export { services, technologies, experiences, testimonials, projects, certificates };
+  export { technologies, experiences, testimonials, projects, certificates, education };

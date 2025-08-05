@@ -23,7 +23,15 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <p className="text-secondary text-[16pxs] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
+        <div className="flex items-center gap-2">
+          <p className="text-secondary text-[16px] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
+          {experience.location && (
+            <>
+              <span className="text-secondary text-[14px]">•</span>
+              <p className="text-secondary text-[14px]" style={{margin: 0}}>{experience.location}</p>
+            </>
+          )}
+        </div>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -41,7 +49,7 @@ const Experience = () => {
     <>
     <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>Experience</p>
-      <h2 className={styles.sectionHeadText}>Education and Experience.</h2>
+      <h2 className={styles.sectionHeadText}>Experience.</h2>
     </motion.div>
 
     <div className="mt-20" flex flex-col >

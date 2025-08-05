@@ -3,7 +3,6 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../style';
-import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
@@ -41,14 +40,9 @@ const About = () => {
       >
         <p>I am a full stack developer with a passion for creating beautiful, responsive, and user-friendly websites. I have a strong foundation in back-end and web development technologies such as JavaScript, React, Node.js, SQL, NoSQL and Mainframes. I am looking for opportunities to work on exciting projects and collaborate with other talented developers.</p>
         
-        <p>Outside of coding, I enjoy dancing, reading books, collecting pokemon cards and I play competitive dodgeball!</p>
+        <p className="mt-4">Outside of coding, I enjoy dancing, reading books, collecting pokemon cards and I play competitive dodgeball!</p>
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap justify-center gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };
